@@ -31,3 +31,100 @@
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+
+.container{
+	max-width: 1080px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 3%;
+}
+
+.logo img{
+	width: 300px;
+	// margin-top: 20px;
+	@include tablet {
+		width: 500px;
+	}
+	@include desktop{
+			width: 700px;
+			margin-left: 150px;
+			// margin-left: auto;
+			// margin-right: auto;
+		
+	}
+}
+
+//*********FOOTER*******
+
+.site-info{
+	display: flex;
+	margin-top: 50px;
+	flex-direction: column;
+		@include tablet{
+			flex-direction: row;
+		}
+		@include desktop {
+			justify-content: flex-end;
+		}
+	p{
+		margin:0;
+		margin-bottom: 20px;
+		// margin-top: 20px;
+	}
+	ul{
+		display: flex;
+		margin-bottom: 20px;
+
+		// flex-basis: 100%;
+	}
+	a{
+		// margin-right: 20px;
+	}
+}
+
+
+//main
+
+.quote-icon{
+	display: none;
+	@include desktop{
+		display: inline;
+	}
+}
+
+#new-quote-button{
+	border:2px solid #0c0;
+	background-color: $color__background-body;
+	box-shadow: none;
+	text-shadow: none;
+	color: #0c0;
+	height:40px;
+	width: 160px;
+	padding:0;
+	font-size: 1.05rem;
+	background: $color__background-body;
+	&:hover{
+		border:2px solid darken(#0c0, 10%);
+		color: darken(#0c0, 10%)
+	}
+	@include tablet{
+		width: 180px;
+		height: 50px;
+		font-size: 1.2rem;
+	}
+}
+.svg-inline--fa{
+	font-size: 150px;
+  }
+
+.site-main{
+	display: flex;
+	width:100%;
+	.content{
+		width:100%;
+		@include desktop{
+		padding-left: 50px;
+		padding-right:50px;
+		}
+	}
+}

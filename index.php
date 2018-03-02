@@ -9,8 +9,12 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		<div class="quote-icon">
+		<i class="fas fa-quote-left" style="color:#00cc00"></i>
+		</div>
 
-		<?php if ( have_posts() ) : ?>
+<div class="content">
+<?php if ( have_posts() ) : ?>
 
 		
 			<?php /* Start the Loop */ ?>
@@ -27,6 +31,10 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+</div>
+		<div class="quote-icon">
+		<i class="fas fa-quote-right" style="color:#00cc00"></i>
+		</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
