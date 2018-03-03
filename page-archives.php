@@ -9,8 +9,12 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		<div class="quote-icon">
+		<i class="fas fa-quote-left" style="color:#00cc00"></i>
+        </div>
+        
 
-		<section class="browse-archives">
+		<section class="browse-archives content">
             <header class-"entry-header">
                 <h1><?php echo get_the_title();?></h1>
             </header>
@@ -57,6 +61,9 @@ get_header(); ?>
 
 
         </section>
+        <div class="quote-icon">
+		<i class="fas fa-quote-right" style="color:#00cc00"></i>
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

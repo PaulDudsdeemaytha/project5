@@ -250,7 +250,7 @@ th {
   font-style: italic; }
 
 * {
-  font-family: 'Exo', sans-serif; }
+  font-family: 'Exo', sans-seri; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -306,6 +306,13 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+button {
+  font-family: inherit; }
+
+.home .entry-content {
+  font-size: 2rem;
+  font-weight: 100; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -611,6 +618,7 @@ a {
       width: 500px; } }
   @media (min-width: 1080px) {
     .logo img {
+      margin-bottom: 60px;
       width: 700px;
       margin-left: 150px; } }
 
@@ -642,6 +650,15 @@ a {
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 20px; }
+  .site-info li {
+    border-right: 1px solid white;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem; }
+  .site-info li:last-child {
+    border-right: none; }
+    @media (min-width: 620px) {
+      .site-info li:last-child {
+        border-right: 1px solid white; } }
 
 .quote-icon {
   display: none; }
@@ -671,7 +688,8 @@ a {
       font-size: 1.2rem; } }
 
 .svg-inline--fa {
-  font-size: 150px; }
+  font-size: 150px;
+  margin-top: 35px; }
 
 .site-main {
   display: -webkit-box;
@@ -684,6 +702,45 @@ a {
       .site-main .content {
         padding-left: 50px;
         padding-right: 50px; } }
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  ul a {
+    font-weight: 100; }
+
+.page-id-113 li {
+  margin-bottom: 5px;
+  margin-right: 10px; }
+
+.entry-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .entry-meta h2, .entry-meta .source {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 1em; }
+  .entry-meta p {
+    padding-top: 5px; }
+  .entry-meta .source {
+    font-style: italic; }
+
+.entry-content p {
+  font-size: 18px; }
+  @media (min-width: 620px) {
+    .entry-content p {
+      font-size: 24px; } }
+  @media (min-width: 1080px) {
+    .entry-content p {
+      font-size: 2rem; } }
+
+.page-id-107 .entry-content p {
+  font-size: 1rem; }
 
 /*--------------------------------------------------------------
 # Media
