@@ -9,8 +9,11 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		<div class="quote-icon">
+		<i class="fas fa-quote-left" style="color:#00cc00"></i>
+		</div>
 
-        <section class="quote-submission-wrapper">
+        <section class="quote-submission-wrapper content">
 
             <header>
                 <?php the_title('<h1 class="entry-title">' , '</h1>'); ?>
@@ -31,7 +34,7 @@ get_header(); ?>
                 </div> 
                 <div>
                     <label for="quote-source"> Where did you find this quote? (e.g. book name)</label>
-                    <input type"text" name="quote_source" id="quote-source">
+                    <input type"text" name="quote_source" id="quote-source" style="color:#666">
                 </div>
                 <div>
                     <label for="quote-source-url"> Provide the URL of the quote source, if availible</label> 
@@ -52,6 +55,9 @@ get_header(); ?>
             <?php endif; ?>
                     
                 </section>
+                <div class="quote-icon">
+		<i class="fas fa-quote-right" style="color:#00cc00"></i>
+		</div>
 
                 </main><!-- #main -->
             </div><!-- #primary -->

@@ -33,37 +33,9 @@
   
 });
 //SECOND PART
-$('#submit-button').on('click', function(event) {
-    event.preventDefault();
-   
-    $.ajax({
-      method: 'post',
-      url: api_vars.root_url + 'wp/v2/posts',
-      data:{
 
-        "status": "publish",
-        "title":$('#quote-author').val() ,
-        "content": $('#quote-content').val(),
-        "_qod_quote_source": $('#quote-source').val(),
-        "_qod_quote_source_url": $('#quote-source-url').val()
 
-      },
-      beforeSend: function(xhr) {
-          xhr.setRequestHeader( 'X-WP-Nonce', api_vars.nonce );
-      }
-    })
-    .done(function(){
-      $('.submit-success-message').text('Your quote submission is success!');
-    })
-    .always(function(){
-      $("#quote-submission-form").trigger('reset');
-    });
-  });
 
-  $("#quote-author, #quote-content").focus(function(event){
-    event.preventDefault();
-    $('.submit-success-message').empty();
-  })
 
 
 })(jQuery);
