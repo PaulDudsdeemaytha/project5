@@ -1,3 +1,4 @@
+
 (function($){
 
     $('#new-quote-button').on('click', function(event) {
@@ -32,10 +33,26 @@
       });
   
 });
-//SECOND PART
 
+$('.submit-quote').on('click', function (event) {
+         event.preventDefault();
+          $.ajax({
+              method: 'post',
+              url: api_vars.root_url + 'wp/v2/posts/',
+              data: {
+                  title: $('#quote-author').val(),
+                  content: $('#quote-the-quote').val(),
+                  _qod_quote_source: $('#quote-source').val(),
+                  _qod_quote_source_url: $('#quote-source-url').val(),
+              },
+              beforeSend: function(xhr) {
+                  xhr.setRequestHeader('X-WP-Nonce', api_vars.nonce );
+              }
+          }).done( function(data) {
+              console.log(api_vars.success);
+              $('#quote-submission-form').hide({duration:300});
+              $('.quote-submit-wrapper .entry-title').append('<p>' + api_vars.success + '</p>');
+          });
+      }); 
 
-
-
-
-})(jQuery);
+  })(jQuery);
