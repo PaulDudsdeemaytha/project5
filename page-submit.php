@@ -26,18 +26,22 @@ get_header(); ?>
                         <label for="quote-author">Author of Quote</label>
                         <input type="text" name="quote_author" id="quote-author">
                     </div>
+                    <br>
                     <div >
                         <label for="quote-the-quote">Quote</label>
                         <textarea name="quote_the_quote" id="quote-the-quote" cols="20" rows="3"></textarea>
                     </div>
+                    <br>
                     <div>
                         <label for="quote-source">Where did you find this quote? (e.g. book name)</label>
                         <input type="text" name="quote_source" id="quote-source">
                     </div>
+                    <br>
                     <div>
                         <label for="quote-source-url">Provide the URL of the quote source, if available.</label>
                         <input type="url" name="quote_source_url" id="quote-source-url">
                     </div>
+                    <br>
 
                     <input type="submit" class="submit-quote" value="Submit Quote">
                 </form>

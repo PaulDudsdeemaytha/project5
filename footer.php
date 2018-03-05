@@ -22,9 +22,7 @@
 					)
 					
 					?>
-
-
-					<p>Brought to you by &copy;<a href="http://www.redacademy.com">RED Academy</a> <?php echo date("Y"); ?></p>
+					<p>Made only by <a href="https://github.com/PaulDudsdeemaytha">Paul Dudsdeemaytha</a> <?php echo date("Y"); ?></p>
 
 
 				</div><!-- .site-info -->

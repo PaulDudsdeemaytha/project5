@@ -636,7 +636,9 @@ a {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
-              flex-direction: row; } }
+              flex-direction: row; }
+      .site-info p {
+        padding-left: 10px; } }
   @media (min-width: 1080px) {
     .site-info {
       -webkit-box-pack: end;
@@ -741,6 +743,12 @@ ul {
 
 .page-id-107 .entry-content p {
   font-size: 1rem; }
+
+.quote-submit-wrapper div input,
+.quote-submit-wrapper div textarea {
+  background: #222;
+  color: white;
+  border: 2px solid #0c0; }
 
 /*--------------------------------------------------------------
 # Media
